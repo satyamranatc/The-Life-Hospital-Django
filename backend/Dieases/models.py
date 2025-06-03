@@ -1,5 +1,6 @@
 from django.db import models
 
+from Doctors.models import Doctor
 
 # Create your models here.
 
@@ -9,4 +10,7 @@ class Dieases(models.Model):
     description = models.CharField(max_length=255)
     treatmentPossible = models.CharField(max_length=255)
     treatmentAvgDuration = models.IntegerField()
-    doctors = models.ManyToManyField('Doctors.Doctor')
+    doctors = models.ManyToManyField(Doctor)
+
+    def __str__(self):
+        return self.name

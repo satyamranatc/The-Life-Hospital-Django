@@ -8,3 +8,5 @@ class Doctor(models.Model):
     gender = models.CharField(max_length=20)
     speciality = models.CharField(max_length=20)
     experience = models.IntegerField()
+    def __str__(self):
+        return self.name

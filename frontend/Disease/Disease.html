@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Life Hospital - Doctor</title>
+    <title>The Life Hospital - Disease</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./Doctor.css">
+    <link rel="stylesheet" href="./Disease.css">
 </head>
 <body>
     <nav>
@@ -14,7 +14,7 @@
             <p>Best In the City</p>
         </section>
         <div id="SearchSection">
-            <input type="text" placeholder="Search doctors, services...">
+            <input type="text" placeholder="Search Diseases, services...">
             <button><i class="fas fa-search"></i></button>
         </div>
         <ul id="NavMenu">
@@ -30,7 +30,7 @@
     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
     <main>
-     <aside id="sidebar">
+    <aside id="sidebar">
             <a href="../Home/Home.html" class="active"><i class="fas fa-Patient"></i> Home</a>
             <a href="../Doctors/Doctors.html"><i class="fas fa-user-md"></i> Doctor</a>
             <a href="../Disease/Disease.html"><i class="fas fa-stethoscope"></i> Diseases</a>
@@ -38,16 +38,15 @@
             <a href="../About/About.html"><i class="fas fa-info-circle"></i> About Us</a>
         </aside>
 
-
         <div id="MainContnt">
 
             <div id="Intro">
-                <h2>We Have The Best Doctors</h2>
+                <h2>We Cure / Treat The Best Possible of Any Diseases</h2>
                 <p></p>
             </div>
 
 
-            <div id="DoctorsList">
+            <div id="DiseasesList">
                 <!-- Content will be added here by Js -->
             </div>
 
@@ -63,6 +62,6 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="./Doctor.js" ></script>
+<script src="./Disease.js" ></script>
 
 </html>
